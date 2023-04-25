@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
 mongoose.connect(
-  "mongodb+srv://blog:NJWozo8XoZwwjQQN@cluster0.bcktvdu.mongodb.net/?retryWrites=true&w=majority"
+  "mongodb+srv://blog:__@cluster0.bcktvdu.mongodb.net/?retryWrites=true&w=majority"
 );
 
 app.post("/register", async (req, res) => {
@@ -135,4 +135,3 @@ app.get("/post/:id", async (req, res) => {
 });
 
 app.listen(4000);
-//
